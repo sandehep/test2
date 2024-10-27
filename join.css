@@ -174,4 +174,7 @@ button:hover {
         margin-bottom: 20px;
         flex-grow: inherit;
     }
+     table {
+        font-size: 14px; /* Reduce table font size */
+    }
 }
