@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+nav{
+    padding: 0%;
+    top: 0%;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -12,37 +16,17 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation Styles */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #333; /* Optional: Add background color */
-}
-
-.nave ul {
-    display: flex;
-    list-style: none;
-}
-
-.nave ul li {
-    margin: 0 10px;
-}
-
-.nave ul li a {
-    color: white;
-    text-decoration: none;
-}
-
 /* Container for the entire page */
 .join-now-page {
-    margin: 20px auto; /* Center and add some margin */
-    max-width: 90%; /* Responsive max width */
+    margin-top: 200px;
+    margin-left:auto ;
+    margin-right: auto;
+    max-width: 1200px;
     padding: 20px;
     background-color: #201c1b;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10%;
 }
 
 /* Header Styles */
@@ -50,6 +34,7 @@ h1 {
     text-align: center;
     color: #09aba0;
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 h2 {
@@ -74,6 +59,7 @@ table {
     border-collapse: collapse;
     margin-bottom: 30px;
     color: white;
+    box-shadow: 4px 5px 8px #09aba0;
 }
 
 th, td {
@@ -87,6 +73,16 @@ th {
     color: #fff;
 }
 
+/* Benefits Section */
+.benefits {
+    margin: 20px 0;
+}
+
+.benefits h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #09aba0;
+}
 /* Testimonials Section */
 .testimonials {
     margin: 20px 0;
@@ -107,28 +103,75 @@ blockquote {
     color: white;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .a {
-        flex-direction: column; /* Stack logo and title on small screens */
-        align-items: center; /* Center items */
-    }
+/* Sign-Up Form Section */
+.sign-up-form {
+    margin: 20px 0;
+}
 
-    .b {
-        height: 40px;
-        margin-bottom: 10px; /* Space between logo and title */
-    }
+.sign-up-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #09aba0;
+}
 
-    .aaaa {
-        font-size: 24px; /* Reduce font size for mobile */
-    }
+.sign-up-form form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
 
-    .c {
-        font-size: 18px; /* Adjust title size */
-        margin-left: 0; /* Centered */
-    }
+label {
+    margin-bottom: 5px;
+}
 
-    table {
-        font-size: 14px; /* Reduce table font size */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #09aba0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #954936;
+}
+
+/* Footer Styles */
+
+    
+.aaaa{
+    font-size: 30px;
+}
+@media (max-width:500px){
+    .a{
+        width:500px;
+        height:60px;
+        
+    }
+    .b{
+        height:40px;
+        
+    }
+    .aaaa{
+        font-size: 20px;
+    }
+    .c{
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        flex-grow: inherit;
     }
 }
