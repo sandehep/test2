@@ -28,6 +28,7 @@
                     <li><a href="contact.html">Contact us  </a></li>
                 </ul>
             </div>
+             <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         </nav>
         <section class="k">
           <video class="l" autoplay muted loop playsinline>
@@ -165,7 +166,17 @@
                 animateOnScroll();
             });
         </script>
-        
+        <script class="nav">
+                function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+        </script>
+            
             
           
   
