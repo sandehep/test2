@@ -219,7 +219,7 @@ h3{
 
 /* Background Images */
 .image-one {
-    background-image: url('i4.jpg');
+    background-image: url('image/i4.jpg');
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -229,19 +229,19 @@ h3{
     background-size: cover;
     margin: 0;
     padding: 0;
-    background-image: url('home.jpg');
+    background-image: url('image/home.jpg');
 }
 .image-three {
     background-size: cover;
     margin: 0;
     padding: 0;
-    background-image: url('1st\ .jpg');
+    background-image: url('image/1st\ .jpg');
 }
 .image-four {
     background-size: cover;
     margin: 0;
     padding: 0;
-    background-image: url('trans.jpg');
+    background-image: url('image/trans.jpg');
 }
 /* Responsive Styles */
 @media (max-width: 1100px) {
@@ -652,4 +652,30 @@ footer {
         color: white;
     }
 
+}
+.hamburger {
+    display: none; /* Hide on larger screens */
+    font-size: 24px;
+    cursor: pointer;
+} 
+@media (max-width: 700px) {
+    .d {
+        display: none ; /* Hide menu initially on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on your header */
+        right: 0;
+        background-color: #09aba0;
+        width: 100%;
+    }
+    #menu .a {
+        padding: 10px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+    }
+    .hamburger {
+        display: block ; /* Show hamburger on smaller screens */
+    }
 }
