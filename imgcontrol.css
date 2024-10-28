@@ -188,7 +188,7 @@ body {
       flex-grow: inherit;
   }
    .container-carrossel {
-      --widthItem: 200px;
+      --widthItem: 180px;
       --heightItem: 90%;
     }
 }
