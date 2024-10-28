@@ -1,156 +1,127 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-nav{
-    padding: 0%;
-    top: 0%;
+nav {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    margin-bottom: 100%;
+    top: 0;
 }
-
-body {
-    font-family: Arial, sans-serif;
+body{
+    font-family:Arial, Helvetica, sans-serif;
     background-color: #201c1b;
-    color: #333;
-    line-height: 1.6;
 }
 
-/* Container for the entire page */
+.a {
+    display: flex;
+    height: 70px;
+    background-color: #201c1b;
+    color: #09aba0;
+    padding: 10px;
+    width: auto;
+}
+
+.c {
+    padding-top: 15px;
+    align-items: center;
+    margin-left: 27.5%;
+    color: #09aba0;
+    font-size: 23px;
+}
+
+.d {
+    display: flex;
+    background-color: #09aba0;
+    width: auto;
+    justify-content: center;
+    padding: 5px;
+    gap: 30px;
+}
+
+.d ul li a {
+    color: #201c1b;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.d ul {
+    gap: 30px;
+}
 .join-now-page {
-    margin-top: 200px;
-    margin-left:auto ;
-    margin-right: auto;
-    max-width: 1200px;
+    width: 80%;
+    max-width: 800px;
+    background-color:#09aba0;
     padding: 20px;
-    background-color: #201c1b;
+    box-shadow: 3px 5px 8px #09aba0;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding-bottom: 10%;
-}
-
-/* Header Styles */
-h1 {
     text-align: center;
-    color: #09aba0;
-    margin-bottom: 10px;
-    margin-left: 10px;
-}
-
-h2 {
-    text-align: center;
-    color: #ddd;
-    margin-bottom: 30px;
-}
-
-/* Membership Plans Section */
-.membership-plans {
-    margin: 20px 0;
-}
-
-.membership-plans h3 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #09aba0;
-}
-
-table {
+    margin-top: 150px;
+    margin-left: 25%;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #201c1b;
+    margin-bottom: 1.5rem;
+  }
+  
+  .membership-plans h3,
+  .testimonials h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 30px;
-    color: white;
-    box-shadow: 4px 5px 8px #09aba0;
-}
-
-th, td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-
-th {
-    background-color: #09aba0;
-    color: #fff;
-}
-
-/* Benefits Section */
-.benefits {
-    margin: 20px 0;
-}
-
-.benefits h3 {
-    text-align: center;
-    margin-bottom: 20px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #201c1b;
     color: #09aba0;
-}
-/* Testimonials Section */
-.testimonials {
-    margin: 20px 0;
-}
-
-.testimonials h3 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: #09aba0;
-}
-
-blockquote {
+    font-weight: bold;
+  }
+  
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  blockquote {
     font-style: italic;
-    text-align: center;
-    border-left: 5px solid #09aba0;
-    padding-left: 20px;
-    margin: 20px 0;
-    color: white;
-}
-
-/* Sign-Up Form Section */
-.sign-up-form {
-    margin: 20px 0;
-}
-
-.sign-up-form h3 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #09aba0;
-}
-
-.sign-up-form form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px;
-    background-color: #09aba0;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #954936;
-}
-
-/* Footer Styles */
-
-    
+    color: #666;
+    margin-top: 1rem;
+    border-left: 4px solid #ddd;
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
 .aaaa{
     font-size: 30px;
 }
@@ -173,5 +144,30 @@ button:hover {
         margin-right: 0px;
         margin-bottom: 20px;
         flex-grow: inherit;
+    }
+    .d ul a{
+        font-size:14px;
+        }
+    .join-now-page {
+        width: 95%;
+        padding: 15px;
+        margin-left: 2%;   
+        }
+        
+    h1 {
+        font-size: 2rem;
+    }
+        
+    h2 {
+        font-size: 1.2rem;
+    }
+        
+    th, td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+        
+    blockquote {
+        font-size: 0.9rem;
     }
 }
