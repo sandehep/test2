@@ -52,13 +52,17 @@ ul{
 .d ul{
     gap: 30px;
   }
-
+  .d ul a:hover{
+    color: white;
+    transform: scale(1.1);
+  }
 
 .conteudo__geral {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  
 }
 
 body {
@@ -167,6 +171,9 @@ body {
 .aaaa{
   font-size: 30px;
 }
+.mobile-design {
+  display: none; /* Hide on PC */
+}
 @media (max-width:500px){
   .a{
       width:500px;
@@ -187,8 +194,25 @@ body {
       margin-bottom: 20px;
       flex-grow: inherit;
   }
-   .container-carrossel {
-      --widthItem: 100px;
-      --heightItem: 90%;
-    }
+  .conteudo__geral {
+    display: none;
+  }
+  .mobile-design {
+    display: block; /* Show on mobile */
+}
+/* Mobile-specific design */
+.mobile-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    gap: 10px;
+    padding: 10px;
+}
+.mobile-gallery .gallery-item {
+    width: 100%;
+}
+.mobile-gallery .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 }
