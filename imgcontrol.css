@@ -189,6 +189,6 @@ body {
   }
    .container-carrossel {
       --widthItem: 50%;
-      --heightItem: 100%;
+      --heightItem: 50%;
     }
 }
