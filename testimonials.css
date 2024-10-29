@@ -108,4 +108,7 @@ body{
         margin-bottom: 20px;
         flex-grow: inherit;
     }
+    .testimonials h2{
+        margin-top: 50px;
+    }
 }
