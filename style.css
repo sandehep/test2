@@ -677,5 +677,6 @@ footer {
     }
     .hamburger {
         display: block ; /* Show hamburger on smaller screens */
+        margin-left: 170px;
     }
 }
