@@ -58,13 +58,14 @@
     .aaaa{
         font-size: 30px;
       }
-      .coming-soon-container {
+    .coming-soon-container {
         max-width: 600px;
         padding: 20px;
         margin-top: 50px;
+        margin-left: 27.5%;
     }
     
-    h1 {
+    .t {
         font-size: 3rem;
         margin-bottom: 1rem;
       
@@ -101,7 +102,10 @@
             margin-bottom: 20px;
             flex-grow: inherit;
         }
-        h1 {
+        .coming-soon-container {
+            margin-left: 1%;
+        }
+        .t {
             font-size: 1.8rem;
         }
     
@@ -113,4 +117,4 @@
             font-size: 0.8rem;
         }
 
-}  
+}   
