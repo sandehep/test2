@@ -16,10 +16,10 @@
     <body>
         <nav>
             <div class="a">
-                <img class="b" src="VYBE - logo 2.jpg" alt="logo">
+                <img class="b" src="image/VYBE - logo 2.jpg" alt="logo">
                 <h1 class="c" ><span class="aaaa">V</span>italize <span class="aaaa">Y</span>our <span class="aaaa">B</span>ody <span class="aaaa">E</span>veryday</h1>
             </div>
-           <div class="d" id="menu">
+            <div class="d" id="menu">
                 <ul>
                     <li><a href="index.html">Home    </a></li>
                     <li><a href="#inquiry">Inquiry  </a></li>
@@ -28,7 +28,7 @@
                     <li><a href="contact.html">Contact us  </a></li>
                 </ul>
             </div>
-             <div class="menu-container" onclick="toggleMenu()">
+            <div class="menu-container" onclick="toggleMenu()">
                 <div class="hamburger">&#9776;</div>
                 <div class="menu-text">Menu</div>
             </div>
@@ -89,7 +89,7 @@
     
         <!-- Enquiry Form at the Bottom of the Home Page -->
         <section id="inquiry" class="bbb">
-        <img class="ccc" src="Untitled design.png">
+        <img class="ccc" src="image/Untitled design.png">
           <div class="container">
             <h2>Inquiry Form</h2>
             <form action="submit_inquiry.php" method="post">
@@ -105,8 +105,12 @@
               <label for="message">Message:</label>
               <textarea id="message" name="message" rows="4" required></textarea>
         
-              <button type="submit"><span class="aaa"> Submit Inquiry</span></button>
+              <button type="button" onclick="submitFormData()"><span class="aaa"> Submit Inquiry</span></button>
             </form>
+            <br>
+
+    <!-- Admin Button to Download Data -->
+    <button type="button" id="adminDownloadBtn" style="display:none" onclick="downloadData()">Download Data (Admin Only)</button>
           </div>
         </section>
         <footer>
@@ -127,7 +131,7 @@
               
               
               <div class="footer-section about">
-                <img src="logo.png" alt="VYBE Logo" class="footer-logo">
+                <img src="image/logo.png" alt="VYBE Logo" class="footer-logo">
                 <p>VYBE is one of the best fitness centers in Chennai. Our customized designs will help you enjoy the best experience of your life.</p>
                 <div class="social-icons">
                   <a href="#"><img src="insta.png" alt="Instagram" class="social-img"></a>
@@ -138,7 +142,7 @@
               </div>
             </div>
           </footer>
-          <script>
+          <script class="ani"> 
             document.addEventListener("DOMContentLoaded", function() {
                 // Elements to apply scroll animations
                 const scrollElements = document.querySelectorAll('.e, .gallery-container, .bbb, .image-one, .image-two, .image-three, .image-four');
@@ -168,6 +172,10 @@
                 // Trigger the animation on load in case some elements are already in view
                 animateOnScroll();
             });
+
+
+           
+            
         </script>
         <script class="nav">
                 function toggleMenu() {
@@ -180,8 +188,51 @@
 }
         </script>
             
-            
-          
+            <script>
+                let formDataArray = [];  // Array to hold form data
+        
+                // Function to collect form data
+                function submitFormData() {
+                    const name = document.getElementById("name").value;
+                    const email = document.getElementById("email").value;
+                    const phone = document.getElementById("phone").value;
+                    const message = document.getElementById("message").value;
+        
+                    // Add form data to the array
+                    formDataArray.push({ name, email, phone, message });
+        
+                    alert("Form submitted. Admin can now download the data.");
+                    
+                    // Make download button visible for admin
+                    document.getElementById("adminDownloadBtn").style.display = "block";
+                }
+        
+                // Function to download data (for Admin)
+                function downloadData() {
+                    if (formDataArray.length === 0) {
+                        alert("No data available to download.");
+                        return;
+                    }
+        
+                    let csvContent = "Name,Email,Phone,Message\n";
+        
+                    // Loop through each data entry and add it to the CSV
+                    formDataArray.forEach(data => {
+                        csvContent += `${data.name},${data.email},${data.phone},"${data.message}"\n`;
+                    });
+        
+                    // Create a Blob with CSV data
+                    const blob = new Blob([csvContent], { type: "text/csv" });
+                    const link = document.createElement("a");
+                    
+                    // Generate a download link for the CSV file
+                    link.href = URL.createObjectURL(blob);
+                    link.download = "inquiry_data.csv"; // The filename for the CSV
+        
+                    // Trigger the download
+                    link.click();
+                }
+            </script>
   
    </body>
 </html>
