@@ -688,6 +688,7 @@ footer {
         font-size: 24px; /* Size of the hamburger icon */
         margin-right: 8px; /* Space between icon and text */
         background-color: #09aba0;
+        margin-left: 130px;
     }
     
     .menu-text {
