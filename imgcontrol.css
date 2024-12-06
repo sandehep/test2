@@ -37,7 +37,7 @@ nav{
     justify-content: center;
     padding: 10px;
     gap: 35px; 
-    font-size: 22px;
+   
 }
 
 .d ul li a{
@@ -165,8 +165,8 @@ body {
 
 @media screen and (min-width: 576px) {
   .container-carrossel {
-    --widthItem: 500px;
-    --heightItem: 350px;
+    --widthItem: 450px;
+    --heightItem: 300px;
   }
 }
 .aaaa{
