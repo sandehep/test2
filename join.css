@@ -1,3 +1,4 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +28,7 @@ body{
 .c {
     padding-top: 15px;
     align-items: center;
-    margin-left: 27.5%;
+    margin-left: 29%;
     color: #09aba0;
     font-size: 23px;
 }
@@ -55,72 +56,65 @@ ul {
 .d ul {
     gap: 30px;
 }
-.join-now-page {
-    width: 80%;
-    max-width: 800px;
-    background-color:#09aba0;
-    padding: 20px;
-    box-shadow: 3px 5px 8px #09aba0;
-    border-radius: 8px;
+.d ul a:hover{
+    color: white;
+    transform: scale(1.1);
+  }
+  header {
+    background: #201c1b;
+    color: white;
     text-align: center;
-    margin-top: 150px;
-    margin-left: 25%;
+    padding: 1.5rem;
+    margin-top: 95px;
   }
   
-  h1 {
+  header h1 {
+    margin: 0;
     font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 0.5rem;
   }
   
-  h2 {
+  header p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+  }
+  
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    gap: 1.5rem;
+  }
+  
+  .service {
+    background: #09aba0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1.5rem;
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+  }
+  
+  .service h2 {
+    color: #333;
     font-size: 1.5rem;
-    color: #201c1b;
-    margin-bottom: 1.5rem;
+    margin: 0 0 0.5rem;
   }
   
-  .membership-plans h3,
-  .testimonials h3 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
+  .service p {
+    color: white;
     font-size: 1rem;
-    color: #333;
+    line-height: 1.5;
   }
   
-  th, td {
-    padding: 12px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #201c1b;
-    color: #09aba0;
-    font-weight: bold;
-  }
-  
-  td {
-    border-bottom: 1px solid #ddd;
-  }
-  
-  tr:hover {
-    background-color: #f9f9f9;
-  }
-  
-  blockquote {
-    font-style: italic;
-    color: #666;
-    margin-top: 1rem;
-    border-left: 4px solid #ddd;
-    padding-left: 1rem;
-    font-size: 1rem;
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    margin-top: 2rem;
   }
 .aaaa{
     font-size: 30px;
@@ -148,24 +142,24 @@ ul {
     .d ul a{
         font-size:14px;
         }
-    .join-now-page {
-        width: 95%;
-        padding: 15px;
-        margin-left: 2%;   
+        .services {
+          flex-direction: column;
+          align-items: center;
         }
-        
-    h1 {
-        font-size: 2rem;
-    }
-        
-    h2 {
-        font-size: 1.2rem;
-    }
-        
-    th, td {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
+      
+        .service {
+          flex: 1 1 100%;
+          max-width: 90%;
+        }
+      
+        header h1 {
+          font-size: 2rem;
+        }
+      
+        header p {
+          font-size: 1rem;
+        }
+      }
         
     blockquote {
         font-size: 0.9rem;
