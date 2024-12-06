@@ -215,7 +215,7 @@ h3{
 
 /* Background Images */
 .image-one {
-    background-image: url('image/i4.jpg');
+    background-image: url('i4.jpg');
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -225,19 +225,19 @@ h3{
     background-size: cover;
     margin: 0;
     padding: 0;
-    background-image: url('image/home.jpg');
+    background-image: url('home.jpg');
 }
 .image-three {
     background-size: cover;
     margin: 0;
     padding: 0;
-    background-image: url('image/1st\ .jpg');
+    background-image: url('1st\ .jpg');
 }
 .image-four {
     background-size: cover;
     margin: 0;
     padding: 0;
-    background-image: url('image/trans.jpg');
+    background-image: url('trans.jpg');
 }
 /* Responsive Styles */
 @media (max-width: 1100px) {
